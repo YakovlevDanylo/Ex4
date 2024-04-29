@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
         System.out.println(findSymbolOccurance("Hello world!", 'o'));
+        System.out.println(findWordPosition("Hello world!", "tello"));
     }
 
     static public int findSymbolOccurance(String source, char symbol) {
@@ -13,4 +14,9 @@ public class Main {
         }
             return counter;
     }
+
+    static public int findWordPosition(String source, String target) {
+        return source.indexOf(target);
+    }
+
 }
