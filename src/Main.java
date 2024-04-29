@@ -3,6 +3,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println(findSymbolOccurance("Hello world!", 'o'));
         System.out.println(findWordPosition("Hello world!", "tello"));
+        System.out.println(stringReverse("Hello world!"));
     }
 
     static public int findSymbolOccurance(String source, char symbol) {
@@ -17,6 +18,10 @@ public class Main {
 
     static public int findWordPosition(String source, String target) {
         return source.indexOf(target);
+    }
+
+    static public String stringReverse(String source) {
+        return new StringBuilder(source).reverse().toString();
     }
 
 }
